@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.check {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    background-color: #4d5f71;
+}
+.form
+{
+    background: #ffffff;
+    box-shadow: -7px -7px 15px rgba(150, 182, 212, 0.5),
+                7px 7px 7px rgba(150, 182, 212, 0.5);
+    height: 210px;
+    max-width: 410px;
+    padding: 16px 25px;
+    border-radius: 7px;
+    transition: height 0.2s ease;
+}
+
+
+
+ h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+header p{
+    margin-top: 5px;
+    color: #474747;
+    font-size: 16px;
+}
+
+
+.form :where(input, button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form input{
+    font-size: 18px;
+    padding: 0 19px;
+    border:1px solid #999 ;
+}
+.form button{
+    font-size: 17px;
+    color: #fff;
+    margin-top: 30px;
+    background: #474747;
+    cursor: pointer;
+}
+
+.qr-code-container {
+    border: 2px solid #fefefe;
+    background-color: white;
+    box-shadow: -7px -7px 15px rgba(150, 182, 212, 0.5),
+                7px 7px 7px rgba(150, 182, 212, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+  }
+  
+  .qr-code-container.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+
